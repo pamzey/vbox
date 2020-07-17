@@ -66,12 +66,6 @@ ActiveRecord::Schema.define(version: 2020_06_24_165038) do
     t.index ["report_id"], name: "index_report_indicators_on_report_id"
   end
 
-  create_table "report_indicators_reports", id: false, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.bigint "report_indicator_id", null: false
-    t.bigint "report_id"
-    t.bigint "indicators_id"
-  end
-
   create_table "report_submissions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.time "time"
     t.datetime "date_submitted"
@@ -115,9 +109,7 @@ ActiveRecord::Schema.define(version: 2020_06_24_165038) do
     t.index ["rule_id"], name: "index_rule_bases_on_rule_id"
   end
 
-  create_table "rule_operands", primary_key: "rule_operand_id", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.bigint "rule_base_id", null: false
-    t.bigint "indicator_id", null: false
+  create_table "rule_operands", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "rule_id"

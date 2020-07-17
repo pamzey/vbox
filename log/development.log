@@ -13690,3 +13690,821 @@ FOREIGN KEY (`report_id`)
   ↳ bin/rails:4
   [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
   ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (4447.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS `adb_test`[0m
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (44.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS `adb_test2`[0m
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE DATABASE `adb_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE DATABASE `adb_test2` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (358.7ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:4
+  [1m[35m (353.3ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK('29909920468594845', 0)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateUsers (20200621090840)
+  [1m[35m (366.7ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `email` varchar(255) NOT NULL, `password_digest` varchar(255) NOT NULL, `active` tinyint(1) DEFAULT TRUE NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621090840_create_users.rb:4
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621090840')[0m
+  ↳ bin/rails:4
+  [1m[35m (49.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateRecipients (20200621091049)
+  [1m[35m (357.0ms)[0m  [1m[35mCREATE TABLE `recipients` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621091049_create_recipients.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621091049')[0m
+  ↳ bin/rails:4
+  [1m[35m (103.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateRoles (20200621092803)
+  [1m[35m (527.4ms)[0m  [1m[35mCREATE TABLE `roles` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `role` varchar(255) NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621092803_create_roles.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621092803')[0m
+  ↳ bin/rails:4
+  [1m[35m (96.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateLocations (20200621092951)
+  [1m[35m (500.8ms)[0m  [1m[35mCREATE TABLE `locations` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `latitude` varchar(255), `longitude` varchar(255), `parent_location` int, `active` tinyint(1) DEFAULT TRUE NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621092951_create_locations.rb:4
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621092951')[0m
+  ↳ bin/rails:4
+  [1m[35m (93.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateReportSubmissions (20200621093206)
+  [1m[35m (504.1ms)[0m  [1m[35mCREATE TABLE `report_submissions` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `time` time, `date_submitted` datetime, `date_ended` datetime, `retired` tinyint(1) DEFAULT TRUE NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621093206_create_report_submissions.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621093206')[0m
+  ↳ bin/rails:4
+  [1m[35m (56.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateReportValues (20200621093446)
+  [1m[35m (359.2ms)[0m  [1m[35mCREATE TABLE `report_values` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `values` decimal, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621093446_create_report_values.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621093446')[0m
+  ↳ bin/rails:4
+  [1m[35m (56.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateRules (20200621093927)
+  [1m[35m (359.2ms)[0m  [1m[35mCREATE TABLE `rules` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `operator` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621093927_create_rules.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621093927')[0m
+  ↳ bin/rails:4
+  [1m[35m (166.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateReportIndicators (20200621093945)
+  [1m[35m (354.8ms)[0m  [1m[35mCREATE TABLE `report_indicators` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621093945_create_report_indicators.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621093945')[0m
+  ↳ bin/rails:4
+  [1m[35m (55.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateRuleBases (20200621094229)
+  [1m[35m (353.0ms)[0m  [1m[35mCREATE TABLE `rule_bases` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621094229_create_rule_bases.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621094229')[0m
+  ↳ bin/rails:4
+  [1m[35m (55.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateRuleOperands (20200621094246)
+  [1m[35m (353.5ms)[0m  [1m[35mCREATE TABLE `rule_operands` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621094246_create_rule_operands.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621094246')[0m
+  ↳ bin/rails:4
+  [1m[35m (56.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateLocationUserMaps (20200621100047)
+  [1m[35m (411.2ms)[0m  [1m[35mCREATE TABLE `location_user_maps` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `assigned` tinyint(1) NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621100047_create_location_user_maps.rb:4
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621100047')[0m
+  ↳ bin/rails:4
+  [1m[35m (56.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateReports (20200621100422)
+  [1m[35m (352.6ms)[0m  [1m[35mCREATE TABLE `reports` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `description` varchar(255), `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621100422_create_reports.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621100422')[0m
+  ↳ bin/rails:4
+  [1m[35m (55.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateUserRoles (20200621102032)
+  [1m[35m (352.4ms)[0m  [1m[35mCREATE TABLE `user_roles` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621102032_create_user_roles.rb:4
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621102032')[0m
+  ↳ bin/rails:4
+  [1m[35m (56.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateEmrTypes (20200622182645)
+  [1m[35m (353.0ms)[0m  [1m[35mCREATE TABLE `emr_types` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `description` varchar(255), `retired` tinyint(1) DEFAULT TRUE NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200622182645_create_emr_types.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200622182645')[0m
+  ↳ bin/rails:4
+  [1m[35m (55.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateReportsReportIndicatorsJoinTable (20200623063959)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT RELEASE_LOCK('29909920468594845')[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('29909920468594845', 0)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateReportsReportIndicatorsJoinTable (20200623063959)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('29909920468594845')[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (3459.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS `adb_test`[0m
+  ↳ bin/rails:4
+  [1m[35m (9.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (56.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS `adb_test2`[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `adb_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `adb_test2` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (590.8ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:4
+  [1m[35m (350.9ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK('29909920468594845', 0)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateUsers (20200621090840)
+  [1m[35m (477.1ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `email` varchar(255) NOT NULL, `password_digest` varchar(255) NOT NULL, `active` tinyint(1) DEFAULT TRUE NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621090840_create_users.rb:4
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621090840')[0m
+  ↳ bin/rails:4
+  [1m[35m (51.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateRecipients (20200621091049)
+  [1m[35m (440.7ms)[0m  [1m[35mCREATE TABLE `recipients` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621091049_create_recipients.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621091049')[0m
+  ↳ bin/rails:4
+  [1m[35m (105.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateRoles (20200621092803)
+  [1m[35m (469.6ms)[0m  [1m[35mCREATE TABLE `roles` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `role` varchar(255) NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621092803_create_roles.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621092803')[0m
+  ↳ bin/rails:4
+  [1m[35m (56.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateLocations (20200621092951)
+  [1m[35m (402.1ms)[0m  [1m[35mCREATE TABLE `locations` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `latitude` varchar(255), `longitude` varchar(255), `parent_location` int, `active` tinyint(1) DEFAULT TRUE NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621092951_create_locations.rb:4
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621092951')[0m
+  ↳ bin/rails:4
+  [1m[35m (56.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateReportSubmissions (20200621093206)
+  [1m[35m (352.8ms)[0m  [1m[35mCREATE TABLE `report_submissions` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `time` time, `date_submitted` datetime, `date_ended` datetime, `retired` tinyint(1) DEFAULT TRUE NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621093206_create_report_submissions.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621093206')[0m
+  ↳ bin/rails:4
+  [1m[35m (56.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateReportValues (20200621093446)
+  [1m[35m (353.3ms)[0m  [1m[35mCREATE TABLE `report_values` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `values` decimal, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621093446_create_report_values.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621093446')[0m
+  ↳ bin/rails:4
+  [1m[35m (56.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateRules (20200621093927)
+  [1m[35m (353.4ms)[0m  [1m[35mCREATE TABLE `rules` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `operator` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621093927_create_rules.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621093927')[0m
+  ↳ bin/rails:4
+  [1m[35m (55.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateReportIndicators (20200621093945)
+  [1m[35m (353.5ms)[0m  [1m[35mCREATE TABLE `report_indicators` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621093945_create_report_indicators.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621093945')[0m
+  ↳ bin/rails:4
+  [1m[35m (55.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateRuleBases (20200621094229)
+  [1m[35m (353.9ms)[0m  [1m[35mCREATE TABLE `rule_bases` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621094229_create_rule_bases.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621094229')[0m
+  ↳ bin/rails:4
+  [1m[35m (55.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateRuleOperands (20200621094246)
+  [1m[35m (452.1ms)[0m  [1m[35mCREATE TABLE `rule_operands` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621094246_create_rule_operands.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621094246')[0m
+  ↳ bin/rails:4
+  [1m[35m (55.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateLocationUserMaps (20200621100047)
+  [1m[35m (415.0ms)[0m  [1m[35mCREATE TABLE `location_user_maps` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `assigned` tinyint(1) NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621100047_create_location_user_maps.rb:4
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621100047')[0m
+  ↳ bin/rails:4
+  [1m[35m (144.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateReports (20200621100422)
+  [1m[35m (452.3ms)[0m  [1m[35mCREATE TABLE `reports` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `description` varchar(255), `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621100422_create_reports.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621100422')[0m
+  ↳ bin/rails:4
+  [1m[35m (56.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateUserRoles (20200621102032)
+  [1m[35m (402.1ms)[0m  [1m[35mCREATE TABLE `user_roles` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621102032_create_user_roles.rb:4
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621102032')[0m
+  ↳ bin/rails:4
+  [1m[35m (56.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateEmrTypes (20200622182645)
+  [1m[35m (451.7ms)[0m  [1m[35mCREATE TABLE `emr_types` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `description` varchar(255), `retired` tinyint(1) DEFAULT TRUE NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200622182645_create_emr_types.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200622182645')[0m
+  ↳ bin/rails:4
+  [1m[35m (55.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateReportsReportIndicatorsJoinTable (20200623063959)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT RELEASE_LOCK('29909920468594845')[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (4082.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS `adb_test`[0m
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (55.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS `adb_test2`[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `adb_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `adb_test2` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (483.8ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:4
+  [1m[35m (388.0ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK('29909920468594845', 0)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateUsers (20200621090840)
+  [1m[35m (351.3ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `email` varchar(255) NOT NULL, `password_digest` varchar(255) NOT NULL, `active` tinyint(1) DEFAULT TRUE NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621090840_create_users.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621090840')[0m
+  ↳ bin/rails:4
+  [1m[35m (57.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateRecipients (20200621091049)
+  [1m[35m (451.9ms)[0m  [1m[35mCREATE TABLE `recipients` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621091049_create_recipients.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621091049')[0m
+  ↳ bin/rails:4
+  [1m[35m (105.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateRoles (20200621092803)
+  [1m[35m (392.9ms)[0m  [1m[35mCREATE TABLE `roles` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `role` varchar(255) NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621092803_create_roles.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621092803')[0m
+  ↳ bin/rails:4
+  [1m[35m (58.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateLocations (20200621092951)
+  [1m[35m (451.5ms)[0m  [1m[35mCREATE TABLE `locations` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `latitude` varchar(255), `longitude` varchar(255), `parent_location` int, `active` tinyint(1) DEFAULT TRUE NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621092951_create_locations.rb:4
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621092951')[0m
+  ↳ bin/rails:4
+  [1m[35m (56.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateReportSubmissions (20200621093206)
+  [1m[35m (407.0ms)[0m  [1m[35mCREATE TABLE `report_submissions` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `time` time, `date_submitted` datetime, `date_ended` datetime, `retired` tinyint(1) DEFAULT TRUE NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621093206_create_report_submissions.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621093206')[0m
+  ↳ bin/rails:4
+  [1m[35m (56.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateReportValues (20200621093446)
+  [1m[35m (666.1ms)[0m  [1m[35mCREATE TABLE `report_values` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `values` decimal, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621093446_create_report_values.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621093446')[0m
+  ↳ bin/rails:4
+  [1m[35m (93.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateRules (20200621093927)
+  [1m[35m (489.8ms)[0m  [1m[35mCREATE TABLE `rules` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `operator` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621093927_create_rules.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621093927')[0m
+  ↳ bin/rails:4
+  [1m[35m (55.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateReportIndicators (20200621093945)
+  [1m[35m (353.5ms)[0m  [1m[35mCREATE TABLE `report_indicators` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621093945_create_report_indicators.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621093945')[0m
+  ↳ bin/rails:4
+  [1m[35m (55.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateRuleBases (20200621094229)
+  [1m[35m (402.5ms)[0m  [1m[35mCREATE TABLE `rule_bases` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621094229_create_rule_bases.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621094229')[0m
+  ↳ bin/rails:4
+  [1m[35m (93.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateRuleOperands (20200621094246)
+  [1m[35m (353.0ms)[0m  [1m[35mCREATE TABLE `rule_operands` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621094246_create_rule_operands.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621094246')[0m
+  ↳ bin/rails:4
+  [1m[35m (55.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateLocationUserMaps (20200621100047)
+  [1m[35m (353.6ms)[0m  [1m[35mCREATE TABLE `location_user_maps` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `assigned` tinyint(1) NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621100047_create_location_user_maps.rb:4
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621100047')[0m
+  ↳ bin/rails:4
+  [1m[35m (55.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateReports (20200621100422)
+  [1m[35m (353.1ms)[0m  [1m[35mCREATE TABLE `reports` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `description` varchar(255), `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621100422_create_reports.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621100422')[0m
+  ↳ bin/rails:4
+  [1m[35m (56.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateUserRoles (20200621102032)
+  [1m[35m (353.6ms)[0m  [1m[35mCREATE TABLE `user_roles` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621102032_create_user_roles.rb:4
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621102032')[0m
+  ↳ bin/rails:4
+  [1m[35m (55.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateEmrTypes (20200622182645)
+  [1m[35m (352.8ms)[0m  [1m[35mCREATE TABLE `emr_types` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `description` varchar(255), `retired` tinyint(1) DEFAULT TRUE NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200622182645_create_emr_types.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200622182645')[0m
+  ↳ bin/rails:4
+  [1m[35m (55.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateReportsReportIndicatorsJoinTable (20200623063959)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT RELEASE_LOCK('29909920468594845')[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (3706.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS `adb_test`[0m
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (86.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS `adb_test2`[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `adb_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `adb_test2` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (583.2ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:4
+  [1m[35m (487.7ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('29909920468594845', 0)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateUsers (20200621090840)
+  [1m[35m (441.9ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `email` varchar(255) NOT NULL, `password_digest` varchar(255) NOT NULL, `active` tinyint(1) DEFAULT TRUE NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621090840_create_users.rb:4
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621090840')[0m
+  ↳ bin/rails:4
+  [1m[35m (51.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateRecipients (20200621091049)
+  [1m[35m (402.9ms)[0m  [1m[35mCREATE TABLE `recipients` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621091049_create_recipients.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621091049')[0m
+  ↳ bin/rails:4
+  [1m[35m (104.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateRoles (20200621092803)
+  [1m[35m (491.9ms)[0m  [1m[35mCREATE TABLE `roles` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `role` varchar(255) NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621092803_create_roles.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621092803')[0m
+  ↳ bin/rails:4
+  [1m[35m (56.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateLocations (20200621092951)
+  [1m[35m (402.6ms)[0m  [1m[35mCREATE TABLE `locations` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `latitude` varchar(255), `longitude` varchar(255), `parent_location` int, `active` tinyint(1) DEFAULT TRUE NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621092951_create_locations.rb:4
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621092951')[0m
+  ↳ bin/rails:4
+  [1m[35m (54.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateReportSubmissions (20200621093206)
+  [1m[35m (814.9ms)[0m  [1m[35mCREATE TABLE `report_submissions` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `time` time, `date_submitted` datetime, `date_ended` datetime, `retired` tinyint(1) DEFAULT TRUE NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621093206_create_report_submissions.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621093206')[0m
+  ↳ bin/rails:4
+  [1m[35m (93.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateReportValues (20200621093446)
+  [1m[35m (549.5ms)[0m  [1m[35mCREATE TABLE `report_values` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `values` decimal, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621093446_create_report_values.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621093446')[0m
+  ↳ bin/rails:4
+  [1m[35m (55.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateRules (20200621093927)
+  [1m[35m (402.5ms)[0m  [1m[35mCREATE TABLE `rules` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `operator` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621093927_create_rules.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621093927')[0m
+  ↳ bin/rails:4
+  [1m[35m (55.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateReportIndicators (20200621093945)
+  [1m[35m (451.3ms)[0m  [1m[35mCREATE TABLE `report_indicators` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621093945_create_report_indicators.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621093945')[0m
+  ↳ bin/rails:4
+  [1m[35m (56.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateRuleBases (20200621094229)
+  [1m[35m (353.7ms)[0m  [1m[35mCREATE TABLE `rule_bases` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621094229_create_rule_bases.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621094229')[0m
+  ↳ bin/rails:4
+  [1m[35m (55.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateRuleOperands (20200621094246)
+  [1m[35m (451.7ms)[0m  [1m[35mCREATE TABLE `rule_operands` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621094246_create_rule_operands.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621094246')[0m
+  ↳ bin/rails:4
+  [1m[35m (56.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateLocationUserMaps (20200621100047)
+  [1m[35m (353.7ms)[0m  [1m[35mCREATE TABLE `location_user_maps` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `assigned` tinyint(1) NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621100047_create_location_user_maps.rb:4
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621100047')[0m
+  ↳ bin/rails:4
+  [1m[35m (55.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateReports (20200621100422)
+  [1m[35m (500.9ms)[0m  [1m[35mCREATE TABLE `reports` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `description` varchar(255), `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621100422_create_reports.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621100422')[0m
+  ↳ bin/rails:4
+  [1m[35m (55.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateUserRoles (20200621102032)
+  [1m[35m (353.3ms)[0m  [1m[35mCREATE TABLE `user_roles` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200621102032_create_user_roles.rb:4
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200621102032')[0m
+  ↳ bin/rails:4
+  [1m[35m (55.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateEmrTypes (20200622182645)
+  [1m[35m (498.4ms)[0m  [1m[35mCREATE TABLE `emr_types` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `description` varchar(255), `retired` tinyint(1) DEFAULT TRUE NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200622182645_create_emr_types.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200622182645')[0m
+  ↳ bin/rails:4
+  [1m[35m (55.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreatePersonBios (20200624164525)
+  [1m[35m (364.1ms)[0m  [1m[35mCREATE TABLE `person_bios` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `firstname` varchar(255), `lastname` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200624164525_create_person_bios.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200624164525')[0m
+  ↳ bin/rails:4
+  [1m[35m (56.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to Foregnkeys (20200624165038)
+  [1m[35m (600.0ms)[0m  [1m[35mALTER TABLE `location_user_maps` ADD `user_id` bigint[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:3
+  [1m[35m (294.2ms)[0m  [1m[35mCREATE  INDEX `index_location_user_maps_on_user_id`  ON `location_user_maps` (`user_id`) [0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:3
+  [1m[35m (984.6ms)[0m  [1m[35mALTER TABLE `location_user_maps` ADD CONSTRAINT `fk_rails_a0e0eb13c4`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:3
+  [1m[35m (699.0ms)[0m  [1m[35mALTER TABLE `users` ADD `person_bio_id` bigint[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:4
+  [1m[35m (294.5ms)[0m  [1m[35mCREATE  INDEX `index_users_on_person_bio_id`  ON `users` (`person_bio_id`) [0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:4
+  [1m[35m (1034.2ms)[0m  [1m[35mALTER TABLE `users` ADD CONSTRAINT `fk_rails_db310e1213`
+FOREIGN KEY (`person_bio_id`)
+  REFERENCES `person_bios` (`id`)
+[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:4
+  [1m[35m (878.6ms)[0m  [1m[35mALTER TABLE `user_roles` ADD `user_id` bigint[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:5
+  [1m[35m (552.0ms)[0m  [1m[35mCREATE  INDEX `index_user_roles_on_user_id`  ON `user_roles` (`user_id`) [0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:5
+  [1m[35m (984.8ms)[0m  [1m[35mALTER TABLE `user_roles` ADD CONSTRAINT `fk_rails_318345354e`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:5
+  [1m[35m (738.7ms)[0m  [1m[35mALTER TABLE `user_roles` ADD `role_id` bigint[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:6
+  [1m[35m (400.4ms)[0m  [1m[35mCREATE  INDEX `index_user_roles_on_role_id`  ON `user_roles` (`role_id`) [0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:6
+  [1m[35m (1083.2ms)[0m  [1m[35mALTER TABLE `user_roles` ADD CONSTRAINT `fk_rails_3369e0d5fc`
+FOREIGN KEY (`role_id`)
+  REFERENCES `roles` (`id`)
+[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:6
+  [1m[35m (650.6ms)[0m  [1m[35mALTER TABLE `report_submissions` ADD `user_id` bigint[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:7
+  [1m[35m (390.3ms)[0m  [1m[35mCREATE  INDEX `index_report_submissions_on_user_id`  ON `report_submissions` (`user_id`) [0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:7
+  [1m[35m (1149.4ms)[0m  [1m[35mALTER TABLE `report_submissions` ADD CONSTRAINT `fk_rails_ec6c8f10a1`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:7
+  [1m[35m (690.2ms)[0m  [1m[35mALTER TABLE `recipients` ADD `report_id` bigint[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:8
+  [1m[35m (302.1ms)[0m  [1m[35mCREATE  INDEX `index_recipients_on_report_id`  ON `recipients` (`report_id`) [0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:8
+  [1m[35m (984.4ms)[0m  [1m[35mALTER TABLE `recipients` ADD CONSTRAINT `fk_rails_de73022fd4`
+FOREIGN KEY (`report_id`)
+  REFERENCES `reports` (`id`)
+[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:8
+  [1m[35m (749.0ms)[0m  [1m[35mALTER TABLE `report_submissions` ADD `report_id` bigint[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:9
+  [1m[35m (303.2ms)[0m  [1m[35mCREATE  INDEX `index_report_submissions_on_report_id`  ON `report_submissions` (`report_id`) [0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:9
+  [1m[35m (1378.8ms)[0m  [1m[35mALTER TABLE `report_submissions` ADD CONSTRAINT `fk_rails_73b99e927f`
+FOREIGN KEY (`report_id`)
+  REFERENCES `reports` (`id`)
+[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:9
+  [1m[35m (787.0ms)[0m  [1m[35mALTER TABLE `report_submissions` ADD `location_id` bigint[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:10
+  [1m[35m (337.2ms)[0m  [1m[35mCREATE  INDEX `index_report_submissions_on_location_id`  ON `report_submissions` (`location_id`) [0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:10
+  [1m[35m (1098.1ms)[0m  [1m[35mALTER TABLE `report_submissions` ADD CONSTRAINT `fk_rails_059a3b8a70`
+FOREIGN KEY (`location_id`)
+  REFERENCES `locations` (`id`)
+[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:10
+  [1m[35m (600.7ms)[0m  [1m[35mALTER TABLE `report_values` ADD `report_submission_id` bigint[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:11
+  [1m[35m (294.2ms)[0m  [1m[35mCREATE  INDEX `index_report_values_on_report_submission_id`  ON `report_values` (`report_submission_id`) [0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:11
+  [1m[35m (886.0ms)[0m  [1m[35mALTER TABLE `report_values` ADD CONSTRAINT `fk_rails_ef1d38fd6e`
+FOREIGN KEY (`report_submission_id`)
+  REFERENCES `report_submissions` (`id`)
+[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:11
+  [1m[35m (650.0ms)[0m  [1m[35mALTER TABLE `rule_bases` ADD `rule_id` bigint[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:12
+  [1m[35m (294.5ms)[0m  [1m[35mCREATE  INDEX `index_rule_bases_on_rule_id`  ON `rule_bases` (`rule_id`) [0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:12
+  [1m[35m (935.5ms)[0m  [1m[35mALTER TABLE `rule_bases` ADD CONSTRAINT `fk_rails_958c711d33`
+FOREIGN KEY (`rule_id`)
+  REFERENCES `rules` (`id`)
+[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:12
+  [1m[35m (601.0ms)[0m  [1m[35mALTER TABLE `rule_operands` ADD `rule_id` bigint[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:13
+  [1m[35m (388.1ms)[0m  [1m[35mCREATE  INDEX `index_rule_operands_on_rule_id`  ON `rule_operands` (`rule_id`) [0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:13
+  [1m[35m (886.5ms)[0m  [1m[35mALTER TABLE `rule_operands` ADD CONSTRAINT `fk_rails_ecb24d57a6`
+FOREIGN KEY (`rule_id`)
+  REFERENCES `rules` (`id`)
+[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:13
+  [1m[35m (600.4ms)[0m  [1m[35mALTER TABLE `rules` ADD `report_indicator_id` bigint[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:14
+  [1m[35m (294.3ms)[0m  [1m[35mCREATE  INDEX `index_rules_on_report_indicator_id`  ON `rules` (`report_indicator_id`) [0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:14
+  [1m[35m (1252.9ms)[0m  [1m[35mALTER TABLE `rules` ADD CONSTRAINT `fk_rails_714fd8249b`
+FOREIGN KEY (`report_indicator_id`)
+  REFERENCES `report_indicators` (`id`)
+[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:14
+  [1m[35m (689.2ms)[0m  [1m[35mALTER TABLE `locations` ADD `emr_type_id` bigint[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:15
+  [1m[35m (294.3ms)[0m  [1m[35mCREATE  INDEX `index_locations_on_emr_type_id`  ON `locations` (`emr_type_id`) [0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:15
+  [1m[35m (886.3ms)[0m  [1m[35mALTER TABLE `locations` ADD CONSTRAINT `fk_rails_8814e3a6d8`
+FOREIGN KEY (`emr_type_id`)
+  REFERENCES `emr_types` (`id`)
+[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:15
+  [1m[35m (719.0ms)[0m  [1m[35mALTER TABLE `location_user_maps` ADD `location_id` bigint[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:16
+  [1m[35m (303.0ms)[0m  [1m[35mCREATE  INDEX `index_location_user_maps_on_location_id`  ON `location_user_maps` (`location_id`) [0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:16
+  [1m[35m (935.5ms)[0m  [1m[35mALTER TABLE `location_user_maps` ADD CONSTRAINT `fk_rails_3547515135`
+FOREIGN KEY (`location_id`)
+  REFERENCES `locations` (`id`)
+[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:16
+  [1m[35m (649.9ms)[0m  [1m[35mALTER TABLE `recipients` ADD `person_bio_id` bigint[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:17
+  [1m[35m (294.5ms)[0m  [1m[35mCREATE  INDEX `index_recipients_on_person_bio_id`  ON `recipients` (`person_bio_id`) [0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:17
+  [1m[35m (1013.2ms)[0m  [1m[35mALTER TABLE `recipients` ADD CONSTRAINT `fk_rails_27a1da9a49`
+FOREIGN KEY (`person_bio_id`)
+  REFERENCES `person_bios` (`id`)
+[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:17
+  [1m[35m (699.2ms)[0m  [1m[35mALTER TABLE `report_indicators` ADD `report_id` bigint[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:18
+  [1m[35m (294.3ms)[0m  [1m[35mCREATE  INDEX `index_report_indicators_on_report_id`  ON `report_indicators` (`report_id`) [0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:18
+  [1m[35m (1058.9ms)[0m  [1m[35mALTER TABLE `report_indicators` ADD CONSTRAINT `fk_rails_62bbb0f697`
+FOREIGN KEY (`report_id`)
+  REFERENCES `reports` (`id`)
+[0m
+  ↳ db/migrate/20200624165038_foregnkeys.rb:18
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200624165038')[0m
+  ↳ bin/rails:4
+  [1m[35m (54.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2020-07-01 08:52:38', '2020-07-01 08:52:38')[0m
+  ↳ bin/rails:4
+  [1m[35m (50.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('29909920468594845')[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
